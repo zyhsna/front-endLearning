@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单域</title>
+</head>
+<body>
+<form action="demo.php" method="post" name="name1">
+<!--    text是文本，用户可输入任何内容-->
+<!--    value 可以显示默认值  通过name区分不同表单元素-->
+
+    <label for="text">用户名</label><input type="text" name="username" value="请输入用户名" maxlength="5", id="text"><br>
+    pwd:<input type="password" name="pwd"> <br>
+<!--    radio 单选按钮-->
+<!--    通过name属性可以实现多选一-->
+    性别:<label for="male">male</label><input type="radio" name="sex" value="male" checked="checked" id="male">  female<input type="radio" name="sex" value="female"> <br>
+<!--    checkbox 复选-->
+    爱好: 足球<input type="checkbox"> 游戏<input type="checkbox"><br>
+</form>
+</body>
+</html>
