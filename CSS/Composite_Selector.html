@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复合选择器之后代选择器</title>
+    <style>
+        /*把ol中的li选出来改为pink
+        后代选择器会把里面所有的标签全部修改
+        */
+        ol li{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<ol>
+    测试题
+    <li>test1
+        <div>test5</div>
+    </li>
+    <li>test2</li>
+</ol>
+<ul>
+    <li>test1</li>
+    <a href="1.jpeg">test</a>
+    <li>test2</li>
+</ul>
+</body>
+</html>
