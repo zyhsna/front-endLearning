@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米布局案例-浮动</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        .box{
+            width: 1226px;
+            height: 285px;
+            background-color: skyblue;=
+        }
+        .box li{
+            float: left;
+            width: 296px;
+            height: 285px;
+            background-color: #fff534;
+            margin-right: 14px;
+        }
+        #last{
+            /*清除最右边格子的右边距*/
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+<ul class="box">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li id="last">4</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复合选择器之子选择器</title>
+    <style>
+        div>a{
+            color: red;
+        }
+        /*只会选择离div标签下一级的所有a标签*/
+    </style>
+</head>
+<body>
+<div>
+    <a href="1.jpeg">儿子</a>
+    <a href="2.jpeg">test</a>
+    <p><a href="2.jpeg">孙子</a></p>
+    <a href="1.jpeg">test</a>
+</div>
+</body>
+</html>
