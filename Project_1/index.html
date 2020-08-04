@@ -22,6 +22,10 @@
             float: right
         }
 
+        input {
+            border: none
+        }
+
         .clearFixed:after {
             content: "";
             display: block;
@@ -99,6 +103,7 @@
         .header .h_top .topCon .conLeft .ulList li a:hover {
             color: #fff;
         }
+
         .header .h_top .topCon .conRight .ulList li:hover {
             background-color: #afb5c0;
         }
@@ -196,7 +201,7 @@
 
         .header .h_bottom .botCon {
             height: 120px;
-            background-color: blue;
+            /*background-color: blue;*/
         }
 
 
@@ -205,37 +210,76 @@
             width: 566px;
             height: 120px;
             /*background-color: red;*/
-            background:red url("img/logo.png") no-repeat;
-            background-size: 226px 100% ;
+            background: url("img/logo.png") no-repeat;
+            background-size: 226px 100%;
         }
 
-        .h_bottom .botCon .conLeft .imgBox{
+        .h_bottom .botCon .conLeft .imgBox {
             position: absolute;
             top: 32px;
             left: 232px;
         }
 
-        .h_bottom .botCon .conLeft .txtBox{
+        .h_bottom .botCon .conLeft .txtBox {
             position: absolute;
             top: 76px;
             left: 232px;
             font-size: 12px;
             color: #fff;
-         }
+        }
 
-        .h_bottom .botCon .conRight{
+        .h_bottom .botCon .conRight {
             width: 454px;
             height: 120px;
-            background-color: pink;
+            /*background-color: pink;*/
             position: relative;
         }
-        .h_bottom .botCon .conRight .btnBox{
+
+        .h_bottom .botCon .conRight .btnBox {
+
             height: 36px;
             position: absolute;
-            background: red ;
-            top:50%;
+            /*background: red;*/
+            top: 50%;
             width: 100%;
             margin-top: -18px;
+            color: #757575;
+            font-size: 12px;
+        }
+
+        .h_bottom .botCon .conRight .btnBox .txt1 {
+            width: 163px;
+            height: 36px;
+            border: none;
+            margin-right: 25px;
+        }
+
+        .pBtn {
+            width: 148px;
+            height: 36px;
+            /*background: gold;*/
+            background: #fff;
+            margin-right: 12px;
+        }
+
+        .pBtn .txt2 {
+            width: 94px;
+            height: 36px;
+
+        }
+
+        .aTxt2 {
+            padding: 6px 4px 9px;
+            /*background: yellow;*/
+            color: #00b38a;
+        }
+
+        .h_bottom .botCon .conRight .btnBox .btnSub {
+            width: 106px;
+            height: 34px;
+            border: 1px solid #ccefe7;
+            background: transparent;
+            color: #ccefe7;
         }
 
 
@@ -248,10 +292,107 @@
             color: black;
         }
 
+        /*search start*/
+        .sear {
+            height: 132px;
+            background: #f2f5f4;
+        }
+
+        .searCon {
+            height: 102px;
+            /*background: red;*/
+            padding-top: 30px;
+        }
+
+
+        .searCon .search {
+            width: 937px;
+            height: 47px;
+            /*background: pink;*/
+            margin-left: 133px;
+        }
+
+        .searCon .search .searchInp {
+            float: left;
+            width: 794px;
+            height: 44px;
+            border: 1px solid #e8e8e8;
+        }
+
+        .searCon .search .btn {
+            float: left;
+            width: 141px;
+            height: 47px;
+            background: #00b38a;
+            line-height: 47px;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .searCon .searchList {
+            /*background: gold;*/
+            margin-left: 133px;
+            font-size: 12px;
+            height: 38px;
+            line-height: 38px;
+        }
+
+        .searCon .searchList li {
+            float: left;
+        }
+
+        .searCon .searchList li a {
+            color: #08d7a2;
+            padding-left: 10px;
+        }
+
+        .hotSearch {
+            color: #afb5c0;
+        }
+
+        .bannCon {
+            height: 430px;
+            background: pink;
+            padding-top: 46px;
+        }
+
+        .bannCon .banLeft {
+            width: 300px;
+            height: 430px;
+            background: skyblue;
+        }
+
+        .bannCon .banRight {
+            width: 840px;
+            height: 430px;
+            background: yellowgreen;
+        }
+
+        .bannCon .banLeft .banList {
+            font-size: 12px;
+        }
+        .bannCon .banLeft .banList li{
+            margin-bottom: 34px;
+        }
+        .bannCon .banLeft .banList li a {
+            padding: 0 12px;
+            color: #555555;
+        }
+
+        .first-a {
+            font-size: 17px;
+        }
+        .bannCon .banLeft .banList span{
+            float: right;
+            font-family: "宋体";
+            margin-top: 5px;
+            color: #555555;
+        }
 
     </style>
 </head>
-<body>
+<body style="height: 1234px;">
 <div id="box">
     <div class="header">
         <div class="h_top">
@@ -292,21 +433,100 @@
                 </div>
 
                 <div class="conRight fr">
-                   <div class="btnBox">
-                       <input type="text" placeholder="输入手机号" class="fl">
-                       <p class="fl">
-                           <input type="text" placeholder="输入验证码">
-                           <a href="#">获取</a>
-                       </p>
-                       <input type="submit" value="登录/注册" class="fl">
-                   </div>
+                    <div class="btnBox">
+                        <input type="text" placeholder="  输入手机号" class="fl txt1">
+                        <p class="fl pBtn">
+                            <input type="text" placeholder="  验证码" class="txt2">
+                            |
+                            <a href="#" class="aTxt2">获取</a>
+                        </p>
+                        <input type="submit" value="登录/注册" class="fl btnSub">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="search"></div>
-    <div class="banner"></div>
+    <div class="sear">
+        <div class="searCon main">
+            <div class="search">
+                <input type="text" class="searchInp fl" placeholder="  搜索公司/职位/地点">
+                <a href="" class="btn fl">搜索</a>
+            </div>
+            <ul class="searchList clearFixed">
+                <li class="hotSearch">热门搜索:</li>
+                <li><a href="">24小时急速入职</a></li>
+                <li><a href="">名企校招早班车</a></li>
+                <li><a href="">java面试</a></li>
+                <li><a href="">架构设计</a></li>
+                <li><a href="">数据分析</a></li>
+                <li><a href="">PHP</a></li>
+                <li><a href="">C++</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+    <div class="banner">
+        <div class="bannCon main clearFixed">
+            <div class="banLeft fl">
+                <ul class="banList">
+                    <li>
+                        <a href="" class="first-a" style="padding: 0">技术</a>
+                        <a href="">java</a>
+                        <a href="">PHP</a>
+                        <a href="">C++</a>
+                        <span> ></span>
+                    </li>
+                    <li>
+                        <a href="" class="first-a" style="padding: 0">技术</a>
+                        <a href="">java</a>
+                        <a href="">PHP</a>
+                        <a href="">C++</a>
+                        <span> ></span>
+                    </li>
+                    <li>
+                        <a href="" class="first-a" style="padding: 0">技术</a>
+                        <a href="">java</a>
+                        <a href="">PHP</a>
+                        <a href="">C++</a>
+                        <span> ></span>
+                    </li>
+                    <li>
+                        <a href="" class="first-a" style="padding: 0">技术</a>
+                        <a href="">java</a>
+                        <a href="">PHP</a>
+                        <a href="">C++</a>
+                        <span> ></span>
+                    </li>
+                    <li>
+                        <a href="" class="first-a" style="padding: 0">技术</a>
+                        <a href="">java</a>
+                        <a href="">PHP</a>
+                        <a href="">C++</a>
+                        <span> ></span>
+                    </li>
+                    <li>
+                        <a href="" class="first-a" style="padding: 0">技术</a>
+                        <a href="">java</a>
+                        <a href="">PHP</a>
+                        <a href="">C++</a>
+                        <span> ></span>
+                    </li>
+                    <li>
+                        <a href="" class="first-a" style="padding: 0">技术</a>
+                        <a href="">java</a>
+                        <a href="">PHP</a>
+                        <a href="">C++</a>
+                        <span> ></span>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="banRight fr"></div>
+        </div>
+    </div>
     <div class="content"></div>
     <div class="footer"></div>
 </div>
