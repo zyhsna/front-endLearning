@@ -353,28 +353,24 @@
 
         .bannCon {
             height: 430px;
-            background: pink;
+            /*background: pink;*/
             padding-top: 46px;
         }
 
         .bannCon .banLeft {
             width: 300px;
-            height: 430px;
-            background: skyblue;
-        }
-
-        .bannCon .banRight {
-            width: 840px;
-            height: 430px;
-            background: yellowgreen;
+            /*height: 430px;*/
+            /*background: skyblue;*/
         }
 
         .bannCon .banLeft .banList {
             font-size: 12px;
         }
-        .bannCon .banLeft .banList li{
-            margin-bottom: 34px;
+
+        .bannCon .banLeft .banList li {
+            margin-bottom: 32px;
         }
+
         .bannCon .banLeft .banList li a {
             padding: 0 12px;
             color: #555555;
@@ -383,12 +379,67 @@
         .first-a {
             font-size: 17px;
         }
-        .bannCon .banLeft .banList span{
+
+        .bannCon .banLeft .banList span {
             float: right;
             font-family: "宋体";
             margin-top: 5px;
             color: #555555;
         }
+
+
+        .bannCon .banRight {
+            position: relative;
+            width: 840px;
+            /*height: 347px;*/
+            /*background: yellowgreen;*/
+        }
+
+        .bannCon .banRight .banImage {
+            width: 840px;
+            height: 347px;
+        }
+
+        .bannCon .banRight .banImage .banImage {
+            width: 100%;
+            height: 100%;
+        }
+
+        .bannCon .banRight span {
+            position: absolute;
+            top: 50%;
+            margin-top: -17px;
+            width: 22px;
+            height: 34px;
+            display: none;
+            box-shadow: #757575;
+            font-size: 34px;
+            color: #757575;
+        }
+
+        .bannCon .banRight:hover span {
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -17px;
+            width: 22px;
+            height: 34px;
+            font-size: 34px;
+            color: #000;
+        }
+
+        .bannCon .banRight .btnRight {
+            right: 20px;
+        }
+
+        .bannCon .banRight .btnLeft {
+            left: 20px;
+        }
+
+        /*banner end*/
+
+        /*content start*/
+
 
     </style>
 </head>
@@ -524,10 +575,20 @@
 
                 </ul>
             </div>
-            <div class="banRight fr"></div>
+            <div class="banRight fr">
+                <div class="banImgBox">
+                    <img src="img/banner.JPG" alt="加载失败" class="banImage">
+                </div>
+                <span class="btnLeft"> <</span>
+                <span class="btnRight"> ></span>
+            </div>
         </div>
     </div>
-    <div class="content"></div>
+    <div class="content">
+        <div class="line1"></div>
+        <div class="line2"></div>
+
+    </div>
     <div class="footer"></div>
 </div>
 </body>
